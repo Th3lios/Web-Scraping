@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+# PART I INSTALL AND TEST
+
 # This tutorial will use BeautigulSoup Package
 # pip install beautifulsoup4
 
