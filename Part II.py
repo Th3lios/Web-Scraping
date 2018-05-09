@@ -1,17 +1,20 @@
 #!/usr/bin/python
 
 from urllib.request import urlopen
+from urllib.error import HTTPError
 from bs4 import BeautifulSoup
 
-bsObj = BeautifulSoup(html.read())
 
-# PART II EXCEPTIONS
+bsObj = BeautifulSoup(html.read(), "html.parser")
+
+# PART II Exception's
 
 # In web scraping is normal that the scrap fail for a change
 # in the web page or any 404 error or 500, therefor you
 # need to use exceptions.
 
 # With this you prevent any HTTP error code.
+# Import (from urllib.error import HTTPError)
 try:
     html = urlopen("http://www.pythonscraping.com/pages/page1.html")
 except HTTPError as e:
@@ -26,8 +29,8 @@ else:
     pass
 
 # Some times the pages don't have the tag that you
-# want to search, therefor you need to catch the
-# AttributeError
+# want to search, therefor you need to use the
+# AttributeError exception
 
 # print(bsObj.non_existent_tag)
 # If you don't check this ↑, the program will stop
@@ -52,7 +55,7 @@ def getTitle(url):
     except HTTPError as e:
         return None
     try:
-        bsObj = BeautifulSoup(html.read())
+        bsObj = BeautifulSoup(html.read(), "html.parser")
         title = bsObj.body.h1 except AttributeError as e:
         return None
     return title
