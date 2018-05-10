@@ -1,8 +1,10 @@
 # Web-Scraping
 
-# Topic's
+How to scrap using BeautifulSoup, resume guide
 
-#- Part I Install and Test
-#- Part II Exception's
-#- Part III find() and findAll()
-#- Part IV Regular Expression's
+## Topic's
+
+### Part I Install and Test
+### Part II Exception's
+### Part III find() and findAll()
+### Part IV Regular Expression's
