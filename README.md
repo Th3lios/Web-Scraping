@@ -1,7 +1,7 @@
 # Web-Scraping
 
 How to scrap using BeautifulSoup, resume guide.
-# Book: https://mega.nz/#F!HIcEgCbA
+# Book: https://mega.nz/#F!HIcEgCbA!TUdeNkzHn2x_UHePO_scIQ
 
 ## Topic's
 
